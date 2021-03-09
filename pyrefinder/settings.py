@@ -59,7 +59,7 @@ ROOT_URLCONF = 'pyrefinder.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['map/templates'],
+        'DIRS': ['pyrefinder/templates', 'map/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
