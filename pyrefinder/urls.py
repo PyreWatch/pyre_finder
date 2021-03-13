@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+admin.site.site_title = 'PyreFinder Admin'
+admin.site.site_header = 'PyreFinder Administration'
+admin.site.index_title = 'PyreFinder Administration'
+
 urlpatterns = [
     path('', include('map.urls')),
     path('admin/', admin.site.urls),
