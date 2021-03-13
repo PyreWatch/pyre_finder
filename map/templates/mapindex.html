@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <!--TODO reformat base and map index html-->
+    <!--TODO set up proper styling and presenation of map-->
+    {% block content %}
+        <h1>Hello from overall map</h1>
+        <div id='map' style='width: 400px; height: 300px;'></div>
+            <script>
+                mapboxgl.accessToken = '{{ mapbox_access_token }}'
+                var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/streets-v11'
+                });
+            </script>
+    {% endblock %}
+</body>
