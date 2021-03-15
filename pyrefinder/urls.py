@@ -23,4 +23,5 @@ admin.site.index_title = 'PyreFinder Administration'
 urlpatterns = [
     path('', include('map.urls')),
     path('admin/', admin.site.urls),
+    path('accounts/', include('django.contrib.auth.urls')),
 ]
